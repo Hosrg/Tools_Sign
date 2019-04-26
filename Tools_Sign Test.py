@@ -21,7 +21,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:56.0) Gecko/201
 #自主抓包提交参数
 formdata1={'formhash':'XXXX',
           'referer':'https://www.t00ls.net/index.php',
-          'loginfield':'XXXX',
+          'loginfield':'username',
           'username':'XXXX',
           'password':'XXXXXX',
           'questionid':'XXXX',
