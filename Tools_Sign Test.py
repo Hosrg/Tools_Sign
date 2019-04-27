@@ -36,14 +36,15 @@ headers2={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 
           'Referer':'https://www.t00ls.net/members-profile-120032.html',
           'X-Requested-With': 'XMLHttpRequest',
           }
-formdata={'formhash':'2a6af27a',
-          'signsubmit':'apply',
+#抓包定义修改
+formdata={'formhash':'XXXX',
+          'signsubmit':'XXXX',
           }
 Tools =s.post(url2,data=formdata,headers=headers2)
 
 ToolsPOC=Tools.text
 lang =tools.text
-res_th =r'<p>(.*?)<font color=".*?">(.*?)</font>(.*?)</p>'
+res_th =r'<p>(.*?)</p>'
 m_tr = re.findall(res_th, lang, re.S | re.M)
 for line in m_tr:
     print(line)
